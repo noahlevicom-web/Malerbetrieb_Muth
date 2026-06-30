@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muth Malerbetrieb GmbH | Maler & Stuckateur in Mainz-Hechtsheim</title>
+  <meta name="description" content="Muth Malerbetrieb GmbH – Ihr Meisterbetrieb in Mainz-Hechtsheim seit 1960. Malerarbeiten, Fassaden, Vollwärmeschutz, Trockenbau & Sanierung historischer Objekte. Jetzt kostenlos beraten lassen." />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              900: '#0a1f63',   // tiefes Royalblau (Header der Originalseite)
+              800: '#102a82',
+              700: '#1638a3',
+              600: '#1d44c4',
+            },
+            gold: {
+              400: '#ffc233',
+              500: '#f5a623',
+              600: '#e08e0b',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'Segoe UI', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    html { font-family: 'Inter', sans-serif; }
+    .hero-overlay {
+      background:
+        linear-gradient(120deg, rgba(10,31,99,0.92) 0%, rgba(16,42,130,0.82) 55%, rgba(10,31,99,0.55) 100%);
+    }
+    .hero-img {
+      background-image: url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="top" class="fixed top-0 inset-x-0 z-50 bg-brand-900/95 backdrop-blur shadow-lg">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Logo -->
+        <a href="#top" class="flex items-center gap-2 group">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gold-500 text-brand-900 text-lg font-black shadow">
+            <i class="fa-solid fa-paint-roller"></i>
+          </span>
+          <span class="leading-tight">
+            <span class="block text-white font-extrabold tracking-wide text-lg">MUTH</span>
+            <span class="block text-gold-400 text-[11px] font-semibold tracking-[0.2em] -mt-1">MALERBETRIEB</span>
+          </span>
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-blue-100">
+          <a href="#leistungen" class="hover:text-gold-400 transition">Leistungen</a>
+          <a href="#ueber-uns" class="hover:text-gold-400 transition">Über uns</a>
+          <a href="#referenzen" class="hover:text-gold-400 transition">Referenzen</a>
+          <a href="#kontakt" class="hover:text-gold-400 transition">Kontakt</a>
+        </div>
+
+        <!-- CTA -->
+        <a href="tel:+496131507132"
+           class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-brand-900 font-bold px-4 py-2.5 rounded-lg shadow-md transition transform hover:-translate-y-0.5 text-sm">
+          <i class="fa-solid fa-phone"></i>
+          <span class="hidden sm:inline">Jetzt anrufen</span>
+          <span class="sm:hidden">Anrufen</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="relative hero-img min-h-[88vh] flex items-center pt-16">
+    <div class="absolute inset-0 hero-overlay"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-gold-400 text-xs font-semibold px-3 py-1.5 rounded-full backdrop-blur mb-6">
+          <i class="fa-solid fa-award"></i> Meisterbetrieb in Mainz seit 1960
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
+          Farbe, die <span class="text-gold-400">bleibt.</span><br />
+          Handwerk, dem man vertraut.
+        </h1>
+        <p class="mt-6 text-lg text-blue-100 leading-relaxed max-w-xl">
+          Von der Wohnzimmerwand bis zur kompletten Fassade: Ihr Familien-Meisterbetrieb
+          in Mainz-Hechtsheim für Maler-, Putz- und Sanierungsarbeiten – seit über
+          60 Jahren sauber, termintreu und persönlich.
+        </p>
+        <div class="mt-9 flex flex-col sm:flex-row gap-4">
+          <a href="#kontakt"
+             class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-brand-900 font-bold px-7 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-calendar-check"></i> Kostenlose Erstberatung
+          </a>
+          <a href="tel:+496131507132"
+             class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-7 py-4 rounded-xl backdrop-blur transition">
+            <i class="fa-solid fa-phone"></i> (06131) 507132
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VERTRAUENS-BAR ===================== -->
+  <section class="bg-brand-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left">
+        <div class="flex items-center justify-center sm:justify-start gap-4">
+          <i class="fa-solid fa-medal text-gold-400 text-3xl"></i>
+          <div>
+            <p class="text-white font-bold">Meisterbetrieb seit 1960</p>
+            <p class="text-blue-200 text-sm">Familienbetrieb in 3. Generation</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center sm:justify-start gap-4">
+          <i class="fa-solid fa-handshake text-gold-400 text-3xl"></i>
+          <div>
+            <p class="text-white font-bold">Faire & klare Preise</p>
+            <p class="text-blue-200 text-sm">Kostenloses, ehrliches Angebot</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center sm:justify-start gap-4">
+          <i class="fa-solid fa-location-dot text-gold-400 text-3xl"></i>
+          <div>
+            <p class="text-white font-bold">Schnell vor Ort</p>
+            <p class="text-blue-200 text-sm">Region Mainz & Rheinhessen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LEISTUNGEN ===================== -->
+  <section id="leistungen" class="py-20 sm:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <span class="text-gold-600 font-bold tracking-wide uppercase text-sm">Unsere Leistungen</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-black text-brand-900">Alles aus einer Meisterhand</h2>
+        <p class="mt-4 text-slate-600">
+          Ob privat, gewerblich, öffentlich oder kirchlich – vom Ein-Zimmer-Anstrich
+          bis zum großen Objekt. Das übernehmen wir für Sie:
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card -->
+        <div class="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-100 transition transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-brand-900/5 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-gold-500 group-hover:text-brand-900 transition">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-900">Malerarbeiten aller Art</h3>
+          <p class="mt-2 text-slate-600 text-sm">Innenanstriche, Lackierungen und kreative Wandgestaltung – sauber ausgeführt und langlebig.</p>
+        </div>
+
+        <div class="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-100 transition transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-brand-900/5 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-gold-500 group-hover:text-brand-900 transition">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-900">Fassadenanstriche</h3>
+          <p class="mt-2 text-slate-600 text-sm">Schützen und verschönern Sie Ihr Haus mit witterungsbeständigen, modernen Fassaden.</p>
+        </div>
+
+        <div class="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-100 transition transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-brand-900/5 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-gold-500 group-hover:text-brand-900 transition">
+            <i class="fa-solid fa-temperature-low"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-900">Vollwärmeschutz (WDVS)</h3>
+          <p class="mt-2 text-slate-600 text-sm">Energie sparen und Heizkosten senken durch fachgerechte Wärmedämmung.</p>
+        </div>
+
+        <div class="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-100 transition transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-brand-900/5 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-gold-500 group-hover:text-brand-900 transition">
+            <i class="fa-solid fa-trowel"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-900">Putz- & Stuckateurarbeiten</h3>
+          <p class="mt-2 text-slate-600 text-sm">Innen- und Außenputz, Sanierputz sowie hochwertige Stuckarbeiten.</p>
+        </div>
+
+        <div class="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-100 transition transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-brand-900/5 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-gold-500 group-hover:text-brand-900 transition">
+            <i class="fa-solid fa-ruler-combined"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-900">Trockenbau & Tapezieren</h3>
+          <p class="mt-2 text-slate-600 text-sm">Raumlösungen, Trennwände, Decken und maßgenaue Tapezierarbeiten.</p>
+        </div>
+
+        <div class="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-100 transition transform hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-brand-900/5 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:bg-gold-500 group-hover:text-brand-900 transition">
+            <i class="fa-solid fa-landmark"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-900">Sanierung historischer Objekte</h3>
+          <p class="mt-2 text-slate-600 text-sm">Restaurierung mit Fingerspitzengefühl – u. a. für Kirchen und Denkmäler.</p>
+        </div>
+      </div>
+
+      <p class="mt-10 text-center text-slate-600">
+        Außerdem: <span class="font-semibold text-brand-900">Fußbodenarbeiten</span> und
+        <span class="font-semibold text-brand-900">Sanierputzarbeiten</span>.
+        <a href="#kontakt" class="text-gold-600 font-semibold hover:underline">Ihr Vorhaben nicht dabei? Fragen Sie uns →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== ÜBER UNS ===================== -->
+  <section id="ueber-uns" class="py-20 sm:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <span class="text-gold-600 font-bold tracking-wide uppercase text-sm">Über uns</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-black text-brand-900">Ein Familienbetrieb mit Geschichte</h2>
+        <p class="mt-5 text-slate-600 leading-relaxed">
+          Gegründet im Jahr <strong>1960</strong> in der Mainzer Stefanstraße, zog der
+          Familienbetrieb Muth bereits 1962/63 in das heutige Gewerbegebiet in
+          Hechtsheim. Seit <strong>1977</strong> sind wir die Muth Malerbetrieb GmbH –
+          geführt von Arno, Andreas und Michael Muth.
+        </p>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          Was uns ausmacht? Echtes Handwerk, ein eingespieltes Team und der persönliche
+          Anspruch, jede Baustelle so zu hinterlassen, wie wir es uns für unser eigenes
+          Zuhause wünschen würden.
+        </p>
+
+        <!-- Zahlen -->
+        <div class="mt-8 grid grid-cols-3 gap-4">
+          <div class="rounded-xl bg-slate-50 p-5 text-center border border-slate-100">
+            <p class="text-3xl font-black text-brand-900">3</p>
+            <p class="text-sm text-slate-500 mt-1">Meister</p>
+          </div>
+          <div class="rounded-xl bg-slate-50 p-5 text-center border border-slate-100">
+            <p class="text-3xl font-black text-brand-900">10</p>
+            <p class="text-sm text-slate-500 mt-1">Facharbeiter</p>
+          </div>
+          <div class="rounded-xl bg-slate-50 p-5 text-center border border-slate-100">
+            <p class="text-3xl font-black text-brand-900">3</p>
+            <p class="text-sm text-slate-500 mt-1">Auszubildende</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80"
+             alt="Maler bei der Arbeit" class="rounded-2xl shadow-xl w-full h-[420px] object-cover" />
+        <div class="absolute -bottom-6 -left-6 bg-gold-500 text-brand-900 rounded-2xl px-6 py-5 shadow-lg hidden sm:block">
+          <p class="text-3xl font-black leading-none">60+</p>
+          <p class="text-sm font-semibold mt-1">Jahre Erfahrung</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REFERENZEN ===================== -->
+  <section id="referenzen" class="py-20 sm:py-28 bg-brand-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <span class="text-gold-400 font-bold tracking-wide uppercase text-sm">Unsere Referenzen</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-black text-white">Ausgeführte Projekte</h2>
+        <p class="mt-4 text-blue-100">
+          Von privaten Wohnanlagen über Gewerbeobjekte bis hin zu Kirchen –
+          ein kleiner Auszug aus unseren Arbeiten in Mainz und Rheinhessen.
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_kirche_hechtsheim_klein.jpg"
+               alt="Kath. Kirche St. Pankratius, Mainz-Hechtsheim" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Kath. Kirche St. Pankratius, Mainz-Hechtsheim</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_wohnanlage_kostheim_klein.jpg"
+               alt="Gemeinnützige Wohnanlage, Mainz-Kostheim" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Gemeinnützige Wohnanlage, Mainz-Kostheim</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_wohnanlage_hechtsheim_klein.jpg"
+               alt="Private Wohnanlage, Mainz-Hechtsheim" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Private Wohnanlage, Mainz-Hechtsheim</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_mehrfamilienhaus_laubenheim_klein.jpg"
+               alt="Mehrfamilienhaus in Laubenheim" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Mehrfamilienhaus in Laubenheim</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_mehrfamilienhaus_ebersheim_klein.jpg"
+               alt="Mehrfamilienhaus in Ebersheim" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Mehrfamilienhaus in Ebersheim</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_neualtbau_hechtsheim_strasse_klein.jpg"
+               alt="Neu-Altbau in Hechtsheim, Straßenseite" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Neu-Altbau in Hechtsheim, Straßenseite</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_rathaus_gonsenheim_klein.jpg"
+               alt="Rathaus Gonsenheim" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Rathaus Gonsenheim</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_kirche_1_klein.jpg"
+               alt="Basilika St. Martin, Bingen – Barbara-Bau" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Basilika St. Martin, Bingen</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <img src="https://www.muth-malerbetrieb.de/referenzen_eineweltladen_mainz_klein.jpg"
+               alt="Eine-Welt-Laden Mainz" loading="lazy" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 to-transparent flex items-end p-5">
+            <p class="text-white font-semibold">Eine-Welt-Laden Mainz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KONTAKT ===================== -->
+  <section id="kontakt" class="py-20 sm:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+      <!-- Infos -->
+      <div>
+        <span class="text-gold-600 font-bold tracking-wide uppercase text-sm">Kontakt</span>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-black text-brand-900">Sprechen wir über Ihr Projekt</h2>
+        <p class="mt-4 text-slate-600">
+          Rufen Sie uns an oder schreiben Sie uns – wir melden uns schnell und beraten
+          Sie kostenlos und unverbindlich.
+        </p>
+
+        <div class="mt-8 space-y-5">
+          <a href="tel:+496131507132" class="flex items-center gap-4 group">
+            <span class="w-11 h-11 rounded-xl bg-brand-900 text-white flex items-center justify-center"><i class="fa-solid fa-phone"></i></span>
+            <span>
+              <span class="block text-sm text-slate-500">Telefon</span>
+              <span class="block font-semibold text-brand-900 group-hover:text-gold-600 transition">(06131) 507132</span>
+            </span>
+          </a>
+          <div class="flex items-center gap-4">
+            <span class="w-11 h-11 rounded-xl bg-brand-900 text-white flex items-center justify-center"><i class="fa-solid fa-fax"></i></span>
+            <span>
+              <span class="block text-sm text-slate-500">Telefax</span>
+              <span class="block font-semibold text-brand-900">(06131) 582442</span>
+            </span>
+          </div>
+          <a href="mailto:info@muth-malerbetrieb.de" class="flex items-center gap-4 group">
+            <span class="w-11 h-11 rounded-xl bg-brand-900 text-white flex items-center justify-center"><i class="fa-solid fa-envelope"></i></span>
+            <span>
+              <span class="block text-sm text-slate-500">E-Mail</span>
+              <span class="block font-semibold text-brand-900 group-hover:text-gold-600 transition">info@muth-malerbetrieb.de</span>
+            </span>
+          </a>
+          <a href="https://maps.google.com/?q=Friedrich-Koenig-Stra%C3%9Fe+2,+55129+Mainz-Hechtsheim" target="_blank" rel="noopener" class="flex items-start gap-4 group">
+            <span class="w-11 h-11 rounded-xl bg-brand-900 text-white flex items-center justify-center"><i class="fa-solid fa-location-dot"></i></span>
+            <span>
+              <span class="block text-sm text-slate-500">Adresse</span>
+              <span class="block font-semibold text-brand-900 group-hover:text-gold-600 transition">Friedrich-Koenig-Straße 2<br />55129 Mainz-Hechtsheim</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Formular -->
+      <div class="bg-white rounded-2xl shadow-lg p-7 sm:p-9 border border-slate-100">
+        <h3 class="text-xl font-bold text-brand-900 mb-6">Kostenlose Erstberatung anfragen</h3>
+
+        <!--
+          ============================================================
+          FORMULAR AKTIVIEREN (erst nötig, wenn Muth zusagt)
+          ============================================================
+          Aktuell ist das Formular nur Optik – beim Absenden passiert nichts.
+          So machst du es funktionsfähig (Daten kommen dann per E-Mail an):
+
+          1) Account anlegen auf https://formspree.io (kostenlos) und ein
+             neues Formular erstellen. Du bekommst eine URL der Form:
+                 https://formspree.io/f/DEINE-ID
+          2) Im <form>-Tag unten ersetzen:
+                 action="#"  ->  action="https://formspree.io/f/DEINE-ID"
+          3) (Empfohlen) Zustell-Adresse fest hinterlegen – diese Zeile
+             direkt nach dem <form>-Tag einfügen:
+                 <input type="hidden" name="_replyto">
+             und im Formspree-Dashboard info@muth-malerbetrieb.de als
+             Empfänger eintragen.
+
+          Die Feldnamen (name, email, telefon, nachricht) sind bereits
+          korrekt gesetzt und tauchen so in der E-Mail auf – sonst nichts
+          zu tun.
+          ============================================================
+        -->
+        <form action="#" method="post" class="space-y-5">
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1.5">Name</label>
+            <input type="text" name="name" required
+                   class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition" placeholder="Ihr Name" />
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1.5">E-Mail</label>
+              <input type="email" name="email" required
+                     class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition" placeholder="name@beispiel.de" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1.5">Telefon</label>
+              <input type="tel" name="telefon"
+                     class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition" placeholder="Optional" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1.5">Ihr Anliegen</label>
+            <textarea name="nachricht" rows="4" required
+                      class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:ring-2 focus:ring-gold-500 focus:border-gold-500 outline-none transition" placeholder="Beschreiben Sie kurz Ihr Vorhaben (z. B. Fassade streichen, Wohnung renovieren …)"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-sm text-slate-600">
+            <input type="checkbox" required class="mt-1 rounded border-slate-300 text-gold-500 focus:ring-gold-500" />
+            <span>Ich habe die <a href="#datenschutz" class="text-gold-600 hover:underline">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.</span>
+          </label>
+          <button type="submit"
+                  class="w-full bg-gold-500 hover:bg-gold-400 text-brand-900 font-bold px-6 py-4 rounded-xl shadow-md transition transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-paper-plane mr-2"></i> Anfrage absenden
+          </button>
+          <p class="text-xs text-slate-400 text-center">Wir melden uns in der Regel innerhalb von 24 Stunden.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-brand-900 text-blue-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gold-500 text-brand-900 text-lg font-black">
+              <i class="fa-solid fa-paint-roller"></i>
+            </span>
+            <span class="leading-tight">
+              <span class="block text-white font-extrabold tracking-wide text-lg">MUTH</span>
+              <span class="block text-gold-400 text-[11px] font-semibold tracking-[0.2em] -mt-1">MALERBETRIEB</span>
+            </span>
+          </div>
+          <p class="text-sm text-blue-200">Ihr Meisterbetrieb für Maler-, Putz- und Sanierungsarbeiten in Mainz-Hechtsheim seit 1960.</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#leistungen" class="hover:text-gold-400 transition">Leistungen</a></li>
+            <li><a href="#ueber-uns" class="hover:text-gold-400 transition">Über uns</a></li>
+            <li><a href="#referenzen" class="hover:text-gold-400 transition">Referenzen</a></li>
+            <li><a href="#kontakt" class="hover:text-gold-400 transition">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Kontakt</h4>
+          <ul class="space-y-2 text-sm">
+            <li><i class="fa-solid fa-phone w-5 text-gold-400"></i> (06131) 507132</li>
+            <li><i class="fa-solid fa-envelope w-5 text-gold-400"></i> info@muth-malerbetrieb.de</li>
+            <li><i class="fa-solid fa-location-dot w-5 text-gold-400"></i> Friedrich-Koenig-Straße 2, 55129 Mainz</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Rechtliches</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#impressum" class="hover:text-gold-400 transition">Impressum</a></li>
+            <li><a href="#datenschutz" class="hover:text-gold-400 transition">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Impressum (gekürzt, aus Originaldaten) -->
+      <div id="impressum" class="mt-12 pt-8 border-t border-white/10 text-xs text-blue-300 leading-relaxed">
+        <p class="font-semibold text-blue-100 mb-1">Impressum</p>
+        <p>Muth Malerbetrieb GmbH · Friedrich-Koenig-Straße 2 · 55129 Mainz-Hechtsheim · Tel. (06131) 507132 · info@muth-malerbetrieb.de</p>
+        <p class="mt-1">Vertretungsberechtigte Geschäftsführer: Arno Muth, Andreas Muth, Michael Muth ·
+          Registergericht: Amtsgericht Mainz · Registernummer: HRB 1316</p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-blue-300">
+        <p>&copy; 2026 Muth Malerbetrieb GmbH. Alle Rechte vorbehalten.</p>
+        <p>Mit <i class="fa-solid fa-heart text-gold-400"></i> in Mainz</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
